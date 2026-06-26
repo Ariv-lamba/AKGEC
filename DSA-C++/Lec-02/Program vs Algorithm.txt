@@ -1,0 +1,63 @@
+📘 Algorithm vs Program
+🔹 1. What is an Algorithm?
+
+An algorithm is a step-by-step procedure to solve a problem.
+
+It is language-independent (written in plain English or pseudocode).
+
+Focus is on logic, not syntax.
+
+Example (Algorithm to find sum of 2 numbers):
+
+Step 1: Start
+Step 2: Read two numbers A and B
+Step 3: Add A and B → SUM
+Step 4: Print SUM
+Step 5: Stop
+
+🔹 2. What is a Program?
+
+A program is the actual implementation of an algorithm in a programming language (like C++, Python, Java).
+
+It is language-dependent.
+
+The program can be executed by a computer.
+
+Example (Program in C++ to find sum of 2 numbers):
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a, b, sum;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+    sum = a + b;
+    cout << "Sum = " << sum << endl;
+    return 0;
+}
+
+🔹 3. Comparison Table
+
+# Program vs Algorithm
+
+| Feature             | Algorithm                                  | Program                                    |
+|---------------------|---------------------------------------------|--------------------------------------------|
+| **Definition**      | Step-by-step procedure to solve a problem   | Implementation of an algorithm in code      |
+| **Form**            | Written in any lang. pseudocode or flowchart| Written in programming language (C++, Python, etc.) |
+| **Execution**       | Cannot be executed directly by a computer   | Can be executed directly by a computer      |
+| **Purpose**         | Focuses on logic and problem-solving steps  | Focuses on solving the problem practically  |
+| **Dependency**      | Independent of any programming language     | Dependent on programming language           |
+| **Examples**        | Algorithm for sorting numbers, finding max  | Bubble Sort in C++, Python code for max     |
+
+
+🔹 4. Analogy
+
+Algorithm = Recipe written in a cookbook.
+
+Program = Actual cooking using ingredients in the kitchen.
+
+✅ Summary for Students:
+
+First design the algorithm (logic).
+
+Then write the program (code) to make the computer solve it.

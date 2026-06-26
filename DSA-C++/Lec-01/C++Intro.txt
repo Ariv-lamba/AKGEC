@@ -1,0 +1,42 @@
+1. What is C++?
+
+C++ is a general-purpose programming language created by Bjarne Stroustrup in 1979 at Bell Labs.
+It is an extension of C language, with added features like Object-Oriented Programming (OOP), better memory management, and rich libraries.
+C++ is known as a middle-level language because it supports both low-level features (like pointers, memory management) and high-level features (like classes, objects, and STL).
+
+It is widely used in:
+
+System programming (OS, device drivers)
+Game development
+Competitive programming
+Real-time simulations and performance-critical applications
+The process of running a C++ program involves several steps:
+
+🔹 Step 1: Writing the Code (Source Code)
+You write code in a .cpp file using an editor (VS Code, Code::Blocks, Turbo C++, etc.).
+Example:
+
+/*
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "Hello World";
+    return 0;
+}
+*/
+
+🔹 Step 2: Compilation
+The compiler (e.g., g++) translates the human-readable source code (.cpp) into object code (.o or .obj) which is machine-readable (binary instructions).
+At this stage, syntax errors (like missing ;) are detected.
+
+🔹 Step 3: Linking
+
+The linker combines your object code with required libraries (like <iostream> for cout, <math> for sqrt).
+It generates a single executable file (e.g., a.exe on Windows, a.out on Linux).
+Errors here are linker errors (e.g., if a function is declared but not defined).
+
+🔹 Step 4: Execution
+
+The executable file is loaded into memory by the Operating System.
+The CPU executes the instructions line by line.
+Output is shown to the user (e.g., on terminal/console).

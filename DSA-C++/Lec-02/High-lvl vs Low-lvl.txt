@@ -1,0 +1,64 @@
+📘 High-Level vs Low-Level Languages
+🔹 1. Low-Level Language
+
+Closest to machine (hardware).
+
+Machine-dependent → code varies from one computer architecture to another.
+
+Faster execution but harder for humans to read/write.
+
+Two types:
+
+Machine Language (binary 0 and 1)
+
+Assembly Language (uses mnemonics like MOV, ADD).
+
+Example (Assembly Code):
+
+MOV AX, 5
+MOV BX, 10
+ADD AX, BX
+
+🔹 2. High-Level Language
+
+Close to human language, easier to understand.
+
+Machine-independent → same code can run on different systems (with compiler).
+
+Slower than low-level (needs compilation/interpretation).
+
+Examples: C, C++, Java, Python, JavaScript.
+
+Example (C++ Code):
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 10;
+    cout << "Sum = " << a + b;
+    return 0;
+}
+
+🔹 3. Comparison Table
+# High-Level vs Low-Level Languages
+
+| Feature           | Low-Level Language                         | High-Level Language                   |
+|-------------------|---------------------------------------------|----------------------------------------|
+| **Closeness**     | Close to hardware, machine-oriented        | Close to humans, problem-oriented      |
+| **Ease of Use**   | Hard to read and write                     | Easy to read and write                 |
+| **Portability**   | Not portable (machine dependent)           | Portable (works on multiple systems)   |
+| **Speed**         | Very fast execution                        | Slower (needs compilation/interpret.)  |
+| **Error Handling**| Hard to debug                              | Easier to debug                        |
+| **Examples**      | Machine code, Assembly                     | C, C++, Java, Python                   |
+
+🔹 4. Analogy
+
+Low-Level Language → Like talking to a computer in its own native language (binary/assembly).
+
+High-Level Language → Like talking to a computer using English-like instructions (C++, Python).
+
+✅ Summary for Students:
+
+Low-level = fast, hardware-level, but hard to write.
+
+High-level = easy to write, portable, but needs a compiler/interpreter.

@@ -1,0 +1,107 @@
+📒 Pointers, Address & Reference in C++
+1️⃣ What is an Address?
+
+Every variable in memory has a unique location.
+
+That location is called the address of the variable.
+
+We can find it using the & operator.
+
+Example:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 10;
+    cout << "Value of x: " << x << endl;
+    cout << "Address of x: " << &x << endl;  // & gives the address
+    return 0;
+}
+
+
+✅ Output (address will vary):
+
+Value of x: 10
+Address of x: 0x7ffee1b3e8ac
+
+2️⃣ What is a Pointer?
+
+A pointer is a variable that stores the address of another variable.
+
+Syntax: type *pointerName;
+
+Example:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 10;
+    int *ptr = &x;  // ptr stores address of x
+
+    cout << "Value of x: " << x << endl;
+    cout << "Address of x: " << &x << endl;
+    cout << "Pointer ptr stores: " << ptr << endl;
+    cout << "Value pointed by ptr: " << *ptr << endl;  // * dereferences
+    return 0;
+}
+
+
+✅ Output:
+
+Value of x: 10
+Address of x: 0x7ffee1b3e8ac
+Pointer ptr stores: 0x7ffee1b3e8ac
+Value pointed by ptr: 10
+
+3️⃣ What is a Reference?
+
+A reference is an alias for an existing variable.
+
+Syntax: type &refName = variable;
+
+Unlike pointers, references cannot be null and cannot change to reference another variable.
+
+Example:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 10;
+    int &ref = x;  // ref is alias for x
+
+    cout << "x = " << x << endl;
+    cout << "ref = " << ref << endl;
+
+    ref = 20;  // changes x
+    cout << "x after changing ref = " << x << endl;
+    return 0;
+}
+
+
+✅ Output:
+
+x = 10
+ref = 10
+x after changing ref = 20
+
+🔑 Summary Table
+/*
++----------------+----------------------+---------------------+--------------------------------------------+
+| Concept        | Stores               | Syntax              | Notes                                      |
++----------------+----------------------+---------------------+--------------------------------------------+
+| Address        | Memory location      | &variable           | Gives location of variable                 |
++----------------+----------------------+---------------------+--------------------------------------------+
+| Pointer        | Address of variable  | int *ptr = &x;      | Can point to different variables;         |
+|                |                      |                     | use *ptr to access value                   |
++----------------+----------------------+---------------------+--------------------------------------------+
+| Reference      | Alias of variable    | int &ref = x;       | Cannot be changed to refer another var;   |
+|                |                      |                     | no * needed                                |
++----------------+----------------------+---------------------+--------------------------------------------+
+*/
+
+
+Pointer: stores address → needs * to get value.
+
+Reference: alias → behaves like original variable.
+
+Address: use & to get memory location.

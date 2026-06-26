@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/arivlamba/Desktop/DSA/CP/B.Tech/Sem3-A/Lec-1/output/HelloWorld'
+relocations:     []
+...

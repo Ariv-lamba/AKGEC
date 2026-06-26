@@ -1,0 +1,53 @@
+🔹 Arithmetic Operators
++----------------+-------------------+-------------------+--------+
+|   Operator     |      Meaning      |    Example        | Result |
++----------------+-------------------+-------------------+--------+
+| +              | Addition          | a = 10, b = 3     | a+b=13 |
+| -              | Subtraction       | a - b             | 7      |
+| *              | Multiplication    | a * b             | 30     |
+| /              | Division          | a / b             | 3      |
+| %              | Modulus (remainder)| a % b            | 1      |
++----------------+-------------------+-------------------+--------+
+
+🔹 Relational Operators
++----------------+------------------------+-------------------+--------+
+|   Operator     |        Meaning         |     Example       | Result |
++----------------+------------------------+-------------------+--------+
+| ==             | Equal to               | (5 == 10)         | false  |
+| !=             | Not equal to           | (5 != 10)         | true   |
+| <              | Less than              | (5 < 10)          | true   |
+| >              | Greater than           | (5 > 10)          | false  |
+| <=             | Less than or equal     | (5 <= 10)         | true   |
+| >=             | Greater than or equal  | (5 >= 10)         | false  |
++----------------+------------------------+-------------------+--------+
+
+🔹 Logical Operators
++----------------+--------------------+-------------------------+--------+
+|   Operator     |      Meaning       |        Example          | Result |
++----------------+--------------------+-------------------------+--------+
+| &&             | Logical AND        | (5 < 10 && 5 > 0)       | true   |
+| ||             | Logical OR         | (5 < 0 || 10 > 0)       | true   |
+| !              | Logical NOT        | !(5 < 10)               | false  |
++----------------+--------------------+-------------------------+--------+
+
+🔹 Assignment Operators
++----------------+------------------------+----------------+--------+
+|   Operator     |        Meaning         |    Example     | Result |
++----------------+------------------------+----------------+--------+
+| =              | Assign                 | a = 10         | a=10   |
+| +=             | Add and assign         | a += 2 (a=5)   | a=7    |
+| -=             | Subtract and assign    | a -= 2 (a=5)   | a=3    |
+| *=             | Multiply and assign    | a *= 2 (a=5)   | a=10   |
+| /=             | Divide and assign      | a /= 2 (a=5)   | a=2    |
+| %=             | Modulus and assign     | a %= 2 (a=5)   | a=1    |
++----------------+------------------------+----------------+--------+
+
+🔹 Increment / Decrement Operators
++----------------+--------------------------+------------------+--------+
+|  Operator |         Meaning               |     Example      | Result |
++----------------+--------------------------+------------------+--------+
+| ++a       | Pre-increment (increase first)| a=5; ++a         | 6      |
+| a++       | Post-increment (use, then inc)| a=5; a++         | 5→6    |
+| --a       | Pre-decrement (decrease first)| a=5; --a         | 4      |
+| a--       | Post-decrement (use, then dec)| a=5; a--         | 5→4    |
++----------------+--------------------------+------------------+--------+

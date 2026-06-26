@@ -1,0 +1,66 @@
+📘 Compiler vs Interpreter
+🔹 1. What is a Compiler?
+
+A compiler translates the entire source code (C++, Java, etc.) into machine code (binary/executable) before execution.
+
+If there are errors, they are all shown after compilation.
+
+Once compiled, the program runs fast, because it’s already in machine code.
+
+Example (C++):
+
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "Hello World";
+    return 0;
+}
+
+
+When you run this program with g++ file.cpp, it generates an executable file (a.out or a.exe).
+
+Running ./a.out gives the output immediately because it is pre-compiled.
+
+🔹 2. What is an Interpreter?
+
+An interpreter translates the source code line by line into machine code and executes it immediately.
+
+Errors are shown as soon as the problematic line is reached.
+
+Slower than compiled languages, because translation happens during execution.
+
+Example (Python):
+
+print("Hello World")
+
+
+Python doesn’t produce an executable first.
+
+When you run python file.py, the interpreter reads each line and executes directly.
+
+🔹 3. Key Comparison Table
+
+# Compiler vs Interpreter
+
+| Feature              | Compiler                                     | Interpreter                                |
+|----------------------|-----------------------------------------------|--------------------------------------------|
+| **Execution**        | Translates whole program into machine code at once | Translates line by line and executes immediately |
+| **Speed**            | Fast execution (after compilation)           | Slower due to line-by-line translation      |
+| **Error Detection**  | Shows all errors after compilation           | Stops immediately at first error            |
+| **Output**           | Generates an independent executable file     | No separate file, runs directly             |
+| **Memory Usage**     | Requires more memory (stores object code)    | Requires less memory                        |
+| **Examples**         | C, C++, Java (compiled)                      | Python, JavaScript, Ruby                    |
+
+
+
+🔹 4. Real-World Analogy
+
+Compiler → Like translating an entire book into Hindi before giving it to a reader. Once done, reader can enjoy smoothly without stopping.
+
+Interpreter → Like a live translator translating sentence by sentence in real-time while someone is speaking.
+
+✅ Summary:
+
+Compiler: Fast execution, full program check, needs compilation step.
+
+Interpreter: Easy to test/debug, slower, no compilation step.

@@ -1,0 +1,145 @@
+🔄 Loops in C++
+
+Loops are used to repeat code multiple times without writing it again and again.
+
+1️⃣ for loop
+
+👉 Used when we know how many times we want to repeat.
+
+Syntax:
+
+for (initialization; condition; update) {
+    // code
+}
+
+
+Example: Print numbers 1 to 5
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        cout << i << " ";
+    }
+    return 0;
+}
+
+
+Output
+
+1 2 3 4 5
+
+2️⃣ while loop
+
+👉 Used when we don’t know the number of times in advance.
+
+Syntax:
+
+while (condition) {
+    // code
+}
+
+
+Example: Print numbers 1 to 5
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i = 1;
+    while (i <= 5) {
+        cout << i << " ";
+        i++;
+    }
+    return 0;
+}
+
+3️⃣ do-while loop
+
+👉 Similar to while, but runs at least once even if the condition is false.
+
+Syntax:
+
+do {
+    // code
+} while (condition);
+
+
+Example: Print numbers 1 to 5
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i = 1;
+    do {
+        cout << i << " ";
+        i++;
+    } while (i <= 5);
+    return 0;
+}
+
+4️⃣ Nested loops
+
+👉 A loop inside another loop. Commonly used for patterns.
+
+Example: Simple star pattern
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 1; j <= 5; j++) {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+
+Output
+
+* * * * * 
+* * * * * 
+* * * * * 
+
+5️⃣ Special statements in loops
+
+break → exit the loop immediately.
+
+continue → skip current iteration, go to next.
+
+Example:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        if (i == 3) continue; // skip 3
+        if (i == 5) break;    // stop at 5
+        cout << i << " ";
+    }
+    return 0;
+}
+
+
+Output
+
+1 2 4
+
+
+✅ Summary:
+
+Use for → when number of repetitions is known.
+
+Use while → when condition decides repetition.
+
+Use do-while → when loop should run at least once.
+
+Use nested → for patterns.
+
+Use break & continue → control flow inside loop.

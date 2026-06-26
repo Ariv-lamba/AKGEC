@@ -1,0 +1,114 @@
+Conditional Statements in C++
+1) if
+
+👉 Runs code only if the condition is true.
+
+Syntax
+
+if (condition) {
+    // code
+}
+
+
+Example
+
+int x = 10;
+if (x > 0) {
+    cout << "Positive number";
+}
+
+2) if-else
+
+👉 Runs one block if true, another if false.
+
+Syntax
+
+if (condition) {
+    // true part
+} else {
+    // false part
+}
+
+
+Example
+
+int x = -5;
+if (x >= 0) {
+    cout << "Non-negative";
+} else {
+    cout << "Negative";
+}
+
+3) else if
+
+👉 Checks multiple conditions in order.
+
+Syntax
+
+if (cond1) {
+    // code
+} else if (cond2) {
+    // code
+} else {
+    // default
+}
+
+
+Example
+
+int marks = 75;
+if (marks >= 90) cout << "Grade A";
+else if (marks >= 60) cout << "Grade B";
+else cout << "Grade C";
+
+4) Nested if
+
+👉 An if inside another if.
+
+Example
+
+int age = 20;
+if (age >= 18) {
+    if (age >= 21) cout << "Adult (21+)";
+    else cout << "Adult (18-20)";
+}
+
+5) switch
+
+👉 Used when you have many fixed options.
+
+Syntax
+
+switch (variable) {
+    case value1: // code; break;
+    case value2: // code; break;
+    default:     // code;
+}
+
+
+Example
+
+int day = 2;
+switch (day) {
+    case 1: cout << "Monday"; break;
+    case 2: cout << "Tuesday"; break;
+    default: cout << "Other day";
+}
+
+6) Ternary Operator ?:
+
+👉 Short form of if-else.
+
+Syntax
+
+(condition) ? value_if_true : value_if_false;
+
+
+Example
+
+int a = 5, b = 10;
+int max = (a > b) ? a : b;
+cout << max;  // prints 10
+
+
+✅ That’s all the basics of conditional statements in C++ in easy words.

@@ -1,0 +1,86 @@
+1️⃣ Pass by Value
+
+A copy of the numbers is passed.
+
+Original numbers don’t change.
+
+#include <iostream>
+using namespace std;
+
+void swapByValue(int a, int b) {
+    int temp = a;
+    a = b;
+    b = temp;
+    cout << "Inside function: a = " << a << ", b = " << b << endl;
+}
+
+int main() {
+    int x = 5, y = 10;
+    swapByValue(x, y);
+    cout << "Outside function: x = " << x << ", y = " << y << endl;
+    return 0;
+}
+
+
+✅ Output:
+
+Inside function: a = 10, b = 5
+Outside function: x = 5, y = 10
+
+2️⃣ Pass by Reference
+
+The function gets actual variables.
+
+Changes affect the original numbers.
+
+#include <iostream>
+using namespace std;
+
+void swapByReference(int &a, int &b) {
+    int temp = a;
+    a = b;
+    b = temp;
+    cout << "Inside function: a = " << a << ", b = " << b << endl;
+}
+
+int main() {
+    int x = 5, y = 10;
+    swapByReference(x, y);
+    cout << "Outside function: x = " << x << ", y = " << y << endl;
+    return 0;
+}
+
+
+✅ Output:
+
+Inside function: a = 10, b = 5
+Outside function: x = 10, y = 5
+
+3️⃣ Pass by Address
+
+The function receives memory addresses of variables.
+
+Changes affect the original numbers.
+
+#include <iostream>
+using namespace std;
+
+void swapByAddress(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+    cout << "Inside function: a = " << *a << ", b = " << *b << endl;
+}
+
+int main() {
+    int x = 5, y = 10;
+    swapByAddress(&x, &y);  // pass addresses
+    cout << "Outside function: x = " << x << ", y = " << y << endl;
+    return 0;
+}
+
+
+✅ Output:
+
+Inside function: a = 10, b = 5
+Outside function: x = 10, y = 5
